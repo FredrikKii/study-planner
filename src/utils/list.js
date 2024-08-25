@@ -1,11 +1,9 @@
 
 // TODO: write unit tests for this function, and finish it
 function splitTodosIntoDays(todos) {
-	const mo = todos.filter(t => t.day === 'mo')
-	const ti = todos.filter(t => t.day === 'ti')
-	const on = todos.filter(t => t.day === 'on')
-
-	return [mo, ti, on]
+    const daysOfWeek = ['mo', 'ti', 'on', 'to', 'fr', 'lö', 'sö'];
+    const groupedTodos = daysOfWeek.map(day => todos.filter(t => t.day === day));
+    return groupedTodos;
 }
 
 // Tips! Du kan få användning för funktioner som:

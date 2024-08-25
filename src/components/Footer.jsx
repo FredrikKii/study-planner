@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Footer = () => {
   const today = new Date().toLocaleDateString('sv-SE', { year: 'numeric', month: 'long', day: 'numeric' });
 
